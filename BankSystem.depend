@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1726237200 source:c:\users\alzahraa\desktop\banksystem\src\person.cpp
+	"Person.h"
+
+1726237097 c:\users\alzahraa\desktop\banksystem\include\person.h
+	<string>
+
+1726237168 source:c:\users\alzahraa\desktop\banksystem\main.cpp
+	<iostream>
+	<string>
+	"Client.h"
+
+1726237220 c:\users\alzahraa\desktop\banksystem\include\client.h
+	<iostream>
+	<string>
+	"Person.h"
+	"Validation.h"
+
+1726237154 c:\users\alzahraa\desktop\banksystem\include\validation.h
+	<iostream>
+	<string>
+
+1726237235 source:c:\users\alzahraa\desktop\banksystem\src\client.cpp
+	"Client.h"
+
