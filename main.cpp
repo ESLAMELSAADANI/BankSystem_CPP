@@ -16,8 +16,6 @@ int main()
 	Eslam.withdraw(4600);
 	Eslam.printInfo();
 
-	cout<<";;;;;;;;;;;;;";
-
 
 	Eslam.transferTo(1500, Karim);
 	Eslam.printInfo();
