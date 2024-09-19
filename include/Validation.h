@@ -8,36 +8,34 @@ class Validation
 {
 public:
 	//Methods
-	static int validateName(string name) {
-		if (name.length() < 5) {
-			return -1;
+	static bool validateName(string name) {
+		if(!(name.size()>=5 && name.size()<=20)){
+            return false;
 		}
-		if (name.length() > 20) {
-			return -2;
+		for(int i=0;i<name.length();i++){
+            if(!(isalpha(name[i]))){
+                return false;
+            }
 		}
-		for (int i = 0; i < name.length(); i++) {
-			if (!(name[i] >= 'A' && name[i] <= 'Z' || name[i] >= 'a' && name[i] <= 'z')) {
-				return -3;
-			}
-		}
-		return 1;
+		return true;
 	}
-	static int validatePassword(string password) {
-		if (password.length() < 8) {
-			return -1;
+	static bool validatePassword(string password) {
+		if(password.size()>=8 && password.size()<=20){
+            return true;
 		}
-		if (password.length() > 20) {
-			return -2;
-		}
-		return 1;
+		return false;
 	}
-	static int validateWithdraw(double balance, double amount) {
-		if (amount > balance) {
-			return 0;
+	static bool validateBalance(double balance) {
+		if (balance < 1500) {
+			return false;
 		}
-		else {
-			return 1;
-		}
+		return true;
+	}
+	static bool validateSalary(double salary){
+	if(salary<5000){
+        return false;
+	}
+	return true;
 	}
 
 };

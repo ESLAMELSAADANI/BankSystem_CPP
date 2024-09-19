@@ -23,3 +23,31 @@
 1726237235 source:c:\users\alzahraa\desktop\banksystem\src\client.cpp
 	"Client.h"
 
+1726237235 source:c:\users\alzahraa\desktop\banksystemcpp\src\client.cpp
+	"Client.h"
+
+1726780981 c:\users\alzahraa\desktop\banksystemcpp\include\client.h
+	<iostream>
+	<string>
+	"Person.h"
+	"Validation.h"
+
+1726780265 c:\users\alzahraa\desktop\banksystemcpp\include\person.h
+	<string>
+	"Validation.h"
+
+1726780765 c:\users\alzahraa\desktop\banksystemcpp\include\validation.h
+	<iostream>
+	<string>
+
+1726237200 source:c:\users\alzahraa\desktop\banksystemcpp\src\person.cpp
+	"Person.h"
+
+1726237244 source:c:\users\alzahraa\desktop\banksystemcpp\src\validation.cpp
+	"Validation.h"
+
+1726780881 source:c:\users\alzahraa\desktop\banksystemcpp\main.cpp
+	<iostream>
+	<string>
+	"Client.h"
+
