@@ -1,0 +1,78 @@
+# depslib dependency file v1.0
+1727006531 source:c:\users\alzahraa\desktop\banksystem_self\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<string>
+	"Client.h"
+	"Employee.h"
+	"Validation.h"
+	"Admin.h"
+	"FileManager.h"
+
+1727006212 c:\users\alzahraa\desktop\banksystem_self\include\client.h
+	<iostream>
+	<string>
+	"Validation.h"
+	"Person.h"
+
+1727006550 c:\users\alzahraa\desktop\banksystem_self\include\validation.h
+	<iostream>
+	<string>
+	<cctype>
+
+1727006133 c:\users\alzahraa\desktop\banksystem_self\include\person.h
+	<string>
+	"Validation.h"
+
+1727006178 c:\users\alzahraa\desktop\banksystem_self\include\employee.h
+	<iostream>
+	<string>
+	"person.h"
+	"validation.h"
+
+1727006241 c:\users\alzahraa\desktop\banksystem_self\include\admin.h
+	"Employee.h"
+
+1727006416 c:\users\alzahraa\desktop\banksystem_self\include\filemanager.h
+	<iostream>
+	<fstream>
+	<string>
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	"DataSourceInterface.h"
+
+1727006291 c:\users\alzahraa\desktop\banksystem_self\include\datasourceinterface.h
+	<iostream>
+	<string>
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+
+1727006597 source:c:\users\alzahraa\desktop\banksystem_self\src\client.cpp
+	"Client.h"
+
+1727006620 source:c:\users\alzahraa\desktop\banksystem_self\src\datasourceinterface.cpp
+	"DataSourceInterface.h"
+
+1727006603 source:c:\users\alzahraa\desktop\banksystem_self\src\employee.cpp
+	"Employee.h"
+
+1727006625 source:c:\users\alzahraa\desktop\banksystem_self\src\parser.cpp
+	"Parser.h"
+
+1727006473 c:\users\alzahraa\desktop\banksystem_self\include\parser.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	<string>
+
+1727006630 source:c:\users\alzahraa\desktop\banksystem_self\src\person.cpp
+	"Person.h"
+

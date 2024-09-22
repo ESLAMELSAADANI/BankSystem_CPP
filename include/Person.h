@@ -1,35 +1,58 @@
 #ifndef PERSON_H
 #define PERSON_H
+#pragma once
 #include <string>
+#include "Validation.h"
 using namespace std;
-class Person
+class Person:public Validation
 {
 protected:
 	//Attributes
-	static int clientsID, EmployeesID, adminsID;
+	int id;
 	string name,password;
-	int salary =0;
-	double balance = 0.0;
 public:
 	Person() {
-
+		this->id = 0;
+		this->name = "";
+		this->password = "";
 	}
 	//Constructors
-	Person(string name, string password, double balance) {
-		this->name = name;
-		this->password = password;
-		this->balance = balance;
-
+	Person(int id,string name, string password) {
+		setId(id);
+		setName(name);
+		setPassword(password);
 	}
-	Person(string name, string password,int salary, double balance) {
-		this->name = name;
-		this->password = password;
-		this->salary = salary;
-		this->balance = balance;
-
+	//Setters
+	void setId(int id) {
+		this->id = id;
 	}
+	void setName(string name) {
+		if (Validation::validateName(name)) {
+			this->name = name;
+		}
+		else {
+			cout << "Invalid Name\n";
+		}
+	}
+	void setPassword(string password) {
+		if (Validation::validatePassword(password)) {
+			this->password = password;
+		}
+		else {
+			cout << "Invalid Password\n";
+		}
+	}
+	//Getters
+	int getId() {
+		return this->id;
+	}
+	string getName() {
+		return this->name;
+	}
+	string getPassword() {
+		return this->password;
+	}
+	//Methods
+	virtual void displayInfo() = 0;
 };
-
-
-
 #endif // PERSON_H
